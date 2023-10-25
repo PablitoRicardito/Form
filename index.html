@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<style>
+    body {
+        color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%,
+                rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%);
+    }
+
+    #header {
+        background-image: url(header.png);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #main-content {
+        padding: 15px;
+    }
+
+    .glow {
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    border-style {
+        background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%,
+                rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%);
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000,
+                0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+
+        to {
+            text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    input[type=email],
+    [type=tel],
+    [type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=button],
+    input[type=submit],
+    input[type=reset] {
+        background-image: url(header.png);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <h1 class="glow">Formulário</h1>
+    </div>
+
+    <form action="">
+        <input type="text" name="Nome" id="" placeholder="Nome">
+        <input type="text" name="CPF" id="" placeholder="CPF">
+        <input type="text" name="Endereço" id="" placeholder="Endereço">
+        <input type="tel" name="Telefone" id="" placeholder="Telefone">
+        <input type="email" name="" id="" placeholder="Email">
+        <input type="submit" value="Enviar" style="text-align: center;">
+    </form>
+</body>
+
+</html>
